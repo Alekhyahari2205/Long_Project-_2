@@ -54,7 +54,7 @@ public class DFS extends Graph.GraphAlgorithm<DFS.DFSVertex> {
     // NOTE: setting it private because we don't need to make a public handle
     // for some methods (like connectedComponents()) which need to run DFS before
     // they are called.
-    private DFS(Graph g) {
+    public DFS(Graph g) {
         super(g, new DFSVertex(null));
         V_Num = g.size();
         finishList = new LinkedList<>();
